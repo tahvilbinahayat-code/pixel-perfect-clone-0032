@@ -1,5 +1,5 @@
-import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const scrollToSection = (id: string) => {
@@ -11,10 +11,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <div className="w-8 h-8 bg-gradient-coral rounded-lg flex items-center justify-center">
-              <Play className="w-4 h-4 text-white fill-white" />
-            </div>
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
+            <img src={logo} alt="ReChord Logo" className="w-10 h-10 rounded-lg" />
             <span className="text-xl font-bold">ReChord</span>
           </div>
           

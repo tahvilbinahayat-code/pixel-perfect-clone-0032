@@ -7,6 +7,7 @@ const HowItWorksSection = () => {
       title: "Record",
       description: "Speak naturally. Your authentic voice, captured in the moment.",
       gradient: "bg-gradient-coral",
+      animate: true,
     },
     {
       icon: MapPin,
@@ -45,7 +46,7 @@ const HowItWorksSection = () => {
             >
               <div className="inline-flex items-center justify-center">
                 <div className={`${step.gradient} w-24 h-24 rounded-3xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300`}>
-                  <step.icon className="w-12 h-12 text-white" />
+                  <step.icon className={`w-12 h-12 text-white ${step.animate ? 'animate-pulse' : ''}`} />
                 </div>
               </div>
               

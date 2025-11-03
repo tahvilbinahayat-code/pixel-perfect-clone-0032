@@ -8,48 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 205 45% 25%;
-    --foreground: 210 40% 98%;
+    --background: 209 45% 25%;
+    --foreground: 60 43% 87%;
 
-    --card: 205 45% 30%;
-    --card-foreground: 210 40% 98%;
+    --card: 200 59% 39%;
+    --card-foreground: 60 43% 87%;
 
-    --popover: 205 45% 28%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 209 45% 25%;
+    --popover-foreground: 60 43% 87%;
 
-    --primary: 205 45% 35%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 200 59% 39%;
+    --primary-foreground: 60 43% 87%;
 
-    --secondary: 205 35% 32%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 209 45% 30%;
+    --secondary-foreground: 60 43% 87%;
 
-    --muted: 205 30% 40%;
-    --muted-foreground: 210 20% 75%;
+    --muted: 209 35% 35%;
+    --muted-foreground: 60 20% 70%;
 
-    --accent: 205 40% 38%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 200 59% 45%;
+    --accent-foreground: 60 43% 87%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 60 43% 87%;
 
-    --border: 205 30% 45%;
-    --input: 205 30% 35%;
-    --ring: 205 40% 50%;
+    --border: 200 40% 50%;
+    --input: 209 45% 30%;
+    --ring: 200 59% 50%;
 
     --radius: 1rem;
 
-    /* Gradient colors */
-    --gradient-coral-start: 0 75% 65%;
-    --gradient-coral-end: 25 85% 60%;
-    --gradient-pink-start: 320 70% 65%;
-    --gradient-pink-end: 280 70% 60%;
-    --gradient-blue-start: 205 50% 30%;
-    --gradient-blue-end: 205 45% 20%;
+    /* Gradient colors - more vibrant */
+    --gradient-coral-start: 15 85% 65%;
+    --gradient-coral-end: 30 90% 55%;
+    --gradient-pink-start: 330 75% 65%;
+    --gradient-pink-end: 290 80% 60%;
+    --gradient-blue-start: 200 59% 39%;
+    --gradient-blue-end: 209 45% 25%;
 
     /* Custom design tokens */
-    --hero-bg: 205 45% 25%;
-    --section-label: 0 75% 65%;
-    --glass-bg: 205 45% 28%;
+    --hero-bg: 209 45% 25%;
+    --section-label: 15 85% 65%;
+    --glass-bg: 209 45% 28%;
   }
 }
 
