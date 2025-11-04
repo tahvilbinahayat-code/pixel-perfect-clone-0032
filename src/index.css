@@ -39,23 +39,23 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
-    /* Purple accent for CTAs */
-    --cta: 270 60% 65%;
-    --cta-hover: 270 65% 60%;
+    /* Teal/Cyan accent for CTAs */
+    --cta: 180 65% 55%;
+    --cta-hover: 180 70% 50%;
 
     /* Gradient colors */
-    --gradient-purple-start: 270 60% 65%;
-    --gradient-purple-end: 280 65% 60%;
-    --gradient-pink-start: 290 70% 70%;
-    --gradient-pink-end: 280 75% 65%;
+    --gradient-teal-start: 180 65% 55%;
+    --gradient-teal-end: 190 60% 50%;
+    --gradient-cyan-start: 185 70% 60%;
+    --gradient-cyan-end: 195 65% 55%;
     --gradient-blue-start: 200 59% 39%; /* #2978a0 */
     --gradient-blue-end: 209 45% 25%; /* #23415d */
 
     /* Custom design tokens */
     --hero-bg: 209 45% 25%;
-    --section-label: 270 60% 65%;
+    --section-label: 180 65% 55%;
     --glass-bg: 209 45% 25%;
-    --record-icon: 290 70% 70%;
+    --record-icon: 185 70% 60%;
   }
 }
 

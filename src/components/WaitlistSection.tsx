@@ -26,7 +26,7 @@ const WaitlistSection = () => {
         <div className="space-y-8 animate-slide-up">
         <h2 className="text-4xl md:text-6xl font-bold">
           Join the{" "}
-          <span className="bg-gradient-to-r from-[hsl(var(--gradient-purple-start))] to-[hsl(var(--gradient-pink-start))] bg-clip-text text-transparent">
+          <span className="bg-gradient-teal bg-clip-text text-transparent">
             Waiting List
           </span>
         </h2>
@@ -35,7 +35,7 @@ const WaitlistSection = () => {
         
         <p className="text-lg">
           If you'd like to be among the{" "}
-          <span className="text-[hsl(var(--gradient-purple-start))] font-semibold">first users</span>, 
+          <span className="text-accent font-semibold">first users</span>, 
           please enter your details below.
         </p>
 
@@ -50,7 +50,7 @@ const WaitlistSection = () => {
             />
             <Button 
               type="submit"
-              className="bg-gradient-to-r from-[hsl(var(--gradient-purple-start))] to-[hsl(var(--gradient-pink-start))] border-0 hover:opacity-90 transition-opacity h-14 px-8 whitespace-nowrap"
+              className="bg-gradient-cyan border-0 hover:opacity-90 transition-opacity h-14 px-8 whitespace-nowrap"
             >
               Join the Waiting List
             </Button>
