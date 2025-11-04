@@ -8,26 +8,30 @@ const TeamSection = () => {
     {
       name: "Shayan Ebrahimi",
       role: "Tech Lead",
-      roleColor: "text-[hsl(var(--gradient-coral-start))]",
+      roleColor: "text-[hsl(var(--gradient-purple-start))]",
       image: shayanImg,
+      linkedin: "https://www.linkedin.com/in/shayan-ebrahimi/",
     },
     {
       name: "Oguzhan Dal",
       role: "Business Co-ordinator",
       roleColor: "text-[hsl(var(--gradient-pink-start))]",
       image: oguzhanImg,
+      linkedin: "https://www.linkedin.com/in/ozzydal/",
     },
     {
       name: "Aslan Nahich",
       role: "Dreamer",
       roleColor: "text-[hsl(var(--gradient-pink-start))]",
       image: aslanImg,
+      linkedin: "https://www.linkedin.com/in/aslan-nahich-86a950137/",
     },
     {
       name: "Mahdi Tahvilian",
       role: "Marketing Lead",
       roleColor: "text-[hsl(var(--gradient-pink-start))]",
       image: mahdiImg,
+      linkedin: "https://www.linkedin.com/in/mohammad-mahdi-tahvilian-56a08b215/",
     },
   ];
 
@@ -41,9 +45,12 @@ const TeamSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {team.map((member, index) => (
-            <div 
+            <a
               key={member.name}
-              className="group animate-slide-up"
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group animate-slide-up block"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="bg-card rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
@@ -59,7 +66,7 @@ const TeamSection = () => {
                   <p className={`${member.roleColor} font-medium`}>{member.role}</p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
