@@ -26,7 +26,7 @@ const WaitlistSection = () => {
         <div className="space-y-8 animate-slide-up">
         <h2 className="text-4xl md:text-6xl font-bold">
           Join the{" "}
-          <span className="bg-gradient-teal bg-clip-text text-transparent">
+          <span className="bg-gradient-bright-blue bg-clip-text text-transparent drop-shadow-lg">
             Waiting List
           </span>
         </h2>
@@ -35,7 +35,7 @@ const WaitlistSection = () => {
         
         <p className="text-lg">
           If you'd like to be among the{" "}
-          <span className="text-accent font-semibold">first users</span>, 
+          <span className="text-accent font-semibold drop-shadow-sm">first users</span>, 
           please enter your details below.
         </p>
 
@@ -46,11 +46,11 @@ const WaitlistSection = () => {
               placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-14 bg-input border-border text-lg"
+              className="h-14 bg-input border-border text-lg focus:border-accent"
             />
             <Button 
               type="submit"
-              className="bg-gradient-cyan border-0 hover:opacity-90 transition-opacity h-14 px-8 whitespace-nowrap"
+              className="bg-gradient-coral border-0 hover:opacity-90 transition-all hover:scale-105 h-14 px-8 whitespace-nowrap shadow-lg"
             >
               Join the Waiting List
             </Button>

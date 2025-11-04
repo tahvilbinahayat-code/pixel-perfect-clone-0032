@@ -16,14 +16,14 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroWaves})` }}
       />
       
-      {/* Subtle teal gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/60 via-background/70 to-primary/10"></div>
+      {/* Vibrant gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/60 via-background/70 to-accent/15"></div>
 
       {/* Animated floating record icon */}
       <div className="absolute top-1/4 right-1/4 animate-float">
         <div className="relative">
-          <Mic className="w-16 h-16 text-accent drop-shadow-lg" strokeWidth={1.5} />
-          <div className="absolute inset-0 bg-accent/20 rounded-full blur-xl"></div>
+          <Mic className="w-16 h-16 text-[hsl(var(--record-icon))] drop-shadow-2xl" strokeWidth={1.5} />
+          <div className="absolute inset-0 bg-[hsl(var(--record-icon))]/30 rounded-full blur-2xl animate-pulse"></div>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             Voice{" "}
-            <span className="bg-gradient-teal bg-clip-text text-transparent">
+            <span className="bg-gradient-bright-blue bg-clip-text text-transparent drop-shadow-lg">
               Memories
             </span>{" "}
             That Last
@@ -39,9 +39,9 @@ const HeroSection = () => {
           
           <div className="flex items-center justify-center gap-6 text-lg md:text-xl flex-wrap">
             <span>Say it.</span>
-            <span className="w-2 h-2 bg-gradient-teal rounded-full"></span>
+            <span className="w-2 h-2 bg-gradient-coral rounded-full shadow-lg"></span>
             <span>Pin it.</span>
-            <span className="w-2 h-2 bg-gradient-teal rounded-full"></span>
+            <span className="w-2 h-2 bg-gradient-coral rounded-full shadow-lg"></span>
             <span>It stays.</span>
           </div>
 

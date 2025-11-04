@@ -52,8 +52,8 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-teal': 'linear-gradient(135deg, hsl(var(--gradient-teal-start)), hsl(var(--gradient-teal-end)))',
-        'gradient-cyan': 'linear-gradient(135deg, hsl(var(--gradient-cyan-start)), hsl(var(--gradient-cyan-end)))',
+        'gradient-bright-blue': 'linear-gradient(135deg, hsl(var(--gradient-bright-blue-start)), hsl(var(--gradient-bright-blue-end)))',
+        'gradient-coral': 'linear-gradient(135deg, hsl(var(--gradient-coral-start)), hsl(var(--gradient-coral-end)))',
         'gradient-blue': 'linear-gradient(180deg, hsl(var(--gradient-blue-start)), hsl(var(--gradient-blue-end)))',
         'hero-wave': 'radial-gradient(ellipse at 20% 50%, rgba(100, 180, 220, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 80% 50%, rgba(70, 150, 200, 0.3) 0%, transparent 50%)',
       },
