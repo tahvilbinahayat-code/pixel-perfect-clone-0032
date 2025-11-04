@@ -17,13 +17,13 @@ const HeroSection = () => {
       />
       
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-[#1a3a52]/40"></div>
+      <div className="absolute inset-0 bg-background/40"></div>
 
       <div className="relative z-10 container mx-auto px-6 py-32 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             Voice{" "}
-            <span className="text-[#f87171]">
+            <span className="bg-gradient-coral bg-clip-text text-transparent">
               Memories
             </span>{" "}
             That Last
@@ -31,9 +31,9 @@ const HeroSection = () => {
           
           <div className="flex items-center justify-center gap-6 text-lg md:text-xl flex-wrap">
             <span>Say it.</span>
-            <span className="w-2 h-2 bg-[#f87171] rounded-full"></span>
+            <span className="w-2 h-2 bg-gradient-coral rounded-full"></span>
             <span>Pin it.</span>
-            <span className="w-2 h-2 bg-[#f87171] rounded-full"></span>
+            <span className="w-2 h-2 bg-gradient-coral rounded-full"></span>
             <span>It stays.</span>
           </div>
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToWaitlist}
               size="lg"
-              className="bg-[#f87171] hover:bg-[#ef4444] border-0 text-white transition-all text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl"
+              className="bg-[hsl(var(--cta))] hover:bg-[hsl(var(--cta-hover))] border-0 text-foreground transition-all text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl"
             >
               Join Waitlist
             </Button>
