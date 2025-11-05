@@ -6,20 +6,20 @@ const HowItWorksSection = () => {
       icon: Mic,
       title: "Record",
       description: "Speak naturally. Your authentic voice, captured in the moment.",
-      gradient: "bg-gradient-coral",
+      bgColor: "bg-[hsl(var(--record-icon))]",
       animate: true,
     },
     {
       icon: MapPin,
       title: "Pin",
       description: "Choose your location. Anchor your voice to a place that matters.",
-      gradient: "bg-gradient-pink",
+      bgColor: "bg-[hsl(var(--pin-icon))]",
     },
     {
       icon: Share2,
       title: "Share",
       description: "Let others discover your voice when they visit that place.",
-      gradient: "bg-gradient-pink",
+      bgColor: "bg-[hsl(var(--share-icon))]",
     },
   ];
 
@@ -45,7 +45,7 @@ const HowItWorksSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="inline-flex items-center justify-center">
-                <div className={`${step.gradient} w-24 h-24 rounded-3xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300`}>
+                <div className={`${step.bgColor} w-24 h-24 rounded-3xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300`}>
                   <step.icon className={`w-12 h-12 text-white ${step.animate ? 'animate-pulse' : ''}`} />
                 </div>
               </div>

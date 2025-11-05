@@ -4,6 +4,7 @@ import PlatformSection from "@/components/PlatformSection";
 import ShareSection from "@/components/ShareSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import StorySection from "@/components/StorySection";
+import VideoSection from "@/components/VideoSection";
 import TeamSection from "@/components/TeamSection";
 import WaitlistSection from "@/components/WaitlistSection";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <ShareSection />
       <HowItWorksSection />
       <StorySection />
+      <VideoSection />
       <TeamSection />
       <WaitlistSection />
     </div>

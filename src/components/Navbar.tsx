@@ -28,7 +28,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <Button onClick={() => scrollToSection('waitlist')} className="bg-[hsl(var(--cta))] hover:bg-[hsl(var(--cta-hover))] border-0 text-foreground transition-all">
+          <Button onClick={() => scrollToSection('waitlist')} className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] hover:opacity-90 border-0 text-foreground transition-all">
             Join Waitlist
           </Button>
         </div>

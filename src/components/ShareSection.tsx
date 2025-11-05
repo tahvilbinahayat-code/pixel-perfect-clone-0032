@@ -6,28 +6,28 @@ const ShareSection = () => {
           <div className="w-16 h-1 bg-gradient-coral mx-auto rounded-full"></div>
           
           <h2 className="text-3xl md:text-5xl font-bold">
-            A New Way to Share
+            A New <span className="text-[hsl(var(--gradient-coral-start))]">Way</span> to <span className="text-[hsl(var(--gradient-purple-start))]">Share</span>
           </h2>
           
           <p className="text-lg md:text-xl">
-            ReChord lets you <strong className="font-semibold">record your voice</strong> and{" "}
-            <strong className="font-semibold">pin it</strong> to a real-world location.
+            ReChord lets you <strong className="font-semibold text-[hsl(var(--gradient-coral-start))]">record your voice</strong> and{" "}
+            <strong className="font-semibold text-[hsl(var(--gradient-purple-start))]">pin it</strong> to a real-world location.
           </p>
 
-          <div className="w-2 h-2 bg-gradient-pink rounded-full mx-auto"></div>
+          <div className="w-2 h-2 bg-[hsl(var(--gradient-coral-start))] rounded-full mx-auto"></div>
 
           <p className="text-lg md:text-xl font-semibold">
             No timelines. No filters. No expiration.
           </p>
 
           <p className="text-muted-foreground text-lg italic">
-            Just moments — personal, permanent, <em>and</em> placed in the world for others to discover.
+            Just moments — <span className="text-[hsl(var(--gradient-coral-start))]">personal</span>, <span className="text-[hsl(var(--gradient-purple-start))]">permanent</span>, <em>and</em> placed in the world for others to discover.
           </p>
 
-          <div className="w-16 h-1 bg-gradient-coral mx-auto rounded-full"></div>
+          <div className="w-16 h-1 bg-gradient-purple mx-auto rounded-full"></div>
 
           <p className="text-xl md:text-2xl font-bold">
-            Share presence, not just content.
+            Share <span className="text-[hsl(var(--gradient-coral-start))]">presence</span>, <span className="text-[hsl(var(--gradient-purple-start))]">not just</span> content.
           </p>
         </div>
       </div>

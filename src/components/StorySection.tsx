@@ -26,7 +26,7 @@ const StorySection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-sm uppercase tracking-widest text-[hsl(var(--gradient-pink-start))]">
+          <p className="text-sm uppercase tracking-widest text-[hsl(var(--section-label))]">
             OUR STORY
           </p>
         </div>

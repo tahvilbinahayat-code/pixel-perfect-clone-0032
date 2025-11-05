@@ -26,7 +26,7 @@ const WaitlistSection = () => {
         <div className="space-y-8 animate-slide-up">
         <h2 className="text-4xl md:text-6xl font-bold">
           Join the{" "}
-          <span className="bg-gradient-bright-blue bg-clip-text text-transparent drop-shadow-lg">
+          <span className="bg-gradient-coral bg-clip-text text-transparent drop-shadow-lg">
             Waiting List
           </span>
         </h2>
@@ -50,7 +50,7 @@ const WaitlistSection = () => {
             />
             <Button 
               type="submit"
-              className="bg-gradient-coral border-0 hover:opacity-90 transition-all hover:scale-105 h-14 px-8 whitespace-nowrap shadow-lg"
+              className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] hover:opacity-90 border-0 transition-all hover:scale-105 h-14 px-8 whitespace-nowrap shadow-lg text-foreground"
             >
               Join the Waiting List
             </Button>

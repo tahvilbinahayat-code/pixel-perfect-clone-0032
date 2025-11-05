@@ -39,15 +39,11 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
-    /* Vibrant accent colors for CTAs */
-    --cta: 200 75% 55%;
-    --cta-hover: 200 80% 50%;
-
-    /* Gradient colors - vibrant and engaging */
-    --gradient-bright-blue-start: 200 75% 55%;
-    --gradient-bright-blue-end: 195 80% 60%;
+    /* Gradient colors from design */
     --gradient-coral-start: 10 85% 65%;
     --gradient-coral-end: 15 80% 60%;
+    --gradient-purple-start: 280 60% 60%;
+    --gradient-purple-end: 300 65% 65%;
     --gradient-blue-start: 200 59% 39%; /* #2978a0 */
     --gradient-blue-end: 209 45% 25%; /* #23415d */
 
@@ -56,6 +52,8 @@ All colors MUST be HSL.
     --section-label: 200 75% 55%;
     --glass-bg: 209 45% 25%;
     --record-icon: 10 85% 65%;
+    --pin-icon: 280 60% 60%;
+    --share-icon: 200 59% 39%;
   }
 }
 
