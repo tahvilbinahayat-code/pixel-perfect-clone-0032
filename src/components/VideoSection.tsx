@@ -2,19 +2,22 @@ import worldMapThumb from "@/assets/world-map-video-thumb.jpg";
 
 const VideoSection = () => {
   return (
-    <section className="py-24 px-6">
-      <div className="container mx-auto max-w-4xl">
+    <section id="introduction" className="py-24 px-6 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[hsl(var(--gradient-purple-start))]/5 to-transparent"></div>
+      
+      <div className="container mx-auto max-w-5xl relative z-10">
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-sm uppercase tracking-widest text-[hsl(var(--section-label))] mb-4">
-            INTRODUCTION
-          </p>
-          <h2 className="text-4xl md:text-6xl font-bold">Introduction to ReChord</h2>
+          <h2 className="text-4xl md:text-6xl font-bold bg-gradient-purple bg-clip-text text-transparent">
+            Introduction to ReChord
+          </h2>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-slide-up bg-card/50 backdrop-blur-sm border border-border/30">
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-slide-up border-2 border-[hsl(var(--gradient-coral-start))]/30 hover:border-[hsl(var(--gradient-coral-start))]/60 transition-all duration-300 group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-[hsl(var(--gradient-coral-start))]/20 via-transparent to-[hsl(var(--gradient-purple-start))]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <video 
             controls
-            className="w-full aspect-video"
+            className="w-full aspect-video relative z-10"
             poster={worldMapThumb}
           >
             <source src="https://rechord.life/ReChord%20Intro.MP4" type="video/mp4" />

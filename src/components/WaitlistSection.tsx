@@ -35,7 +35,7 @@ const WaitlistSection = () => {
         
         <p className="text-lg">
           If you'd like to be among the{" "}
-          <span className="text-accent font-semibold drop-shadow-sm">first users</span>, 
+          <span className="text-[hsl(var(--gradient-purple-start))] font-semibold drop-shadow-sm">first users</span>, 
           please enter your details below.
         </p>
 
