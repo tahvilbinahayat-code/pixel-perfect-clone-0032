@@ -21,18 +21,13 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-6 py-32 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
-          <div className="space-y-2">
-            <p className="text-sm uppercase tracking-widest text-foreground/60">
-              THE PLATFORM
-            </p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              Voice{" "}
-              <span className="bg-gradient-coral bg-clip-text text-transparent drop-shadow-lg">
-                Memories
-              </span>{" "}
-              That Last
-            </h1>
-          </div>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+            Voice{" "}
+            <span className="bg-gradient-coral bg-clip-text text-transparent drop-shadow-lg">
+              Memories
+            </span>{" "}
+            That Last
+          </h1>
           
           <div className="flex items-center justify-center gap-6 text-lg md:text-xl flex-wrap">
             <span>Say it.</span>

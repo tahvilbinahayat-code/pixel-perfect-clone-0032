@@ -1,3 +1,5 @@
+import worldMapThumb from "@/assets/world-map-video-thumb.jpg";
+
 const VideoSection = () => {
   return (
     <section className="py-24 px-6">
@@ -13,7 +15,7 @@ const VideoSection = () => {
           <video 
             controls
             className="w-full aspect-video"
-            poster="/placeholder.svg"
+            poster={worldMapThumb}
           >
             <source src="https://rechord.life/ReChord%20Intro.MP4" type="video/mp4" />
             Your browser does not support the video tag.

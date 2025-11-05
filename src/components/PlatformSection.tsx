@@ -25,6 +25,9 @@ const PlatformSection = () => {
     <section id="platform" className="py-24 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-slide-up">
+          <p className="text-sm uppercase tracking-widest text-[hsl(var(--section-label))] mb-4">
+            THE PLATFORM
+          </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">This is ReChord</h2>
           <p className="text-lg text-muted-foreground">
             A map filled with moments — voices placed, not posted.
@@ -38,17 +41,18 @@ const PlatformSection = () => {
               className="group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-card rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-                <div className="aspect-square overflow-hidden">
+              <div className="relative bg-gradient-to-br from-card via-card to-card/80 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 border-2 border-border/50 hover:border-[hsl(var(--gradient-coral-start))] shadow-lg hover:shadow-2xl">
+                <div className="aspect-square overflow-hidden relative">
                   <img 
                     src={feature.image} 
                     alt={feature.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/30 to-transparent"></div>
                 </div>
-                <div className="p-6 space-y-3">
-                  <h3 className="text-2xl font-bold">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                <div className="relative p-8 space-y-4 bg-card/95 backdrop-blur-sm">
+                  <h3 className="text-2xl font-bold bg-gradient-coral bg-clip-text text-transparent">{feature.title}</h3>
+                  <p className="text-foreground/80 leading-relaxed">{feature.description}</p>
                 </div>
               </div>
             </div>
