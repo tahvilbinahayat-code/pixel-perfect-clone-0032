@@ -1,5 +1,6 @@
 import shayanImg from "@/assets/shayan.png";
 import oguzhanImg from "@/assets/oguzhan.jpg";
+import jimImg from "@/assets/jim.jpg";
 import aslanImg from "@/assets/aslan.jpg";
 import mahdiImg from "@/assets/mahdi.png";
 
@@ -18,6 +19,13 @@ const TeamSection = () => {
       roleColor: "text-[hsl(var(--gradient-purple-start))]",
       image: oguzhanImg,
       linkedin: "https://www.linkedin.com/in/ozzydal/",
+    },
+        {
+      name: "Jim Bristow",
+      role: "Chairman",
+      roleColor: "text-[hsl(var(--gradient-coral-start))]",
+      image: jimImg,
+      linkedin: "#",
     },
     {
       name: "Aslan Nahich",
