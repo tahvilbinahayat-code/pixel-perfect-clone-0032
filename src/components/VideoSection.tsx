@@ -8,7 +8,7 @@ const VideoSection = () => {
       
       <div className="container mx-auto max-w-5xl relative z-10">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl md:text-6xl font-bold bg-gradient-purple bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent">
             Introduction to ReChord
           </h2>
         </div>

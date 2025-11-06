@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             Voice{" "}
-            <span className="bg-gradient-coral bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent drop-shadow-lg">
               Memories
             </span>{" "}
             That Last
@@ -31,9 +31,9 @@ const HeroSection = () => {
           
           <div className="flex items-center justify-center gap-6 text-lg md:text-xl flex-wrap">
             <span>Say it.</span>
-            <span className="w-2 h-2 bg-gradient-coral rounded-full shadow-lg"></span>
+            <span className="w-2 h-2 bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] rounded-full shadow-lg"></span>
             <span>Pin it.</span>
-            <span className="w-2 h-2 bg-gradient-coral rounded-full shadow-lg"></span>
+            <span className="w-2 h-2 bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] rounded-full shadow-lg"></span>
             <span>It stays.</span>
           </div>
 

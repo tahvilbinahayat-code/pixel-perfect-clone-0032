@@ -32,7 +32,7 @@ const HowItWorksSection = () => {
           </p>
           <h2 className="text-4xl md:text-6xl font-bold space-y-2">
             <div>Simple.</div>
-            <div className="text-[hsl(var(--gradient-coral-start))]">Friendly.</div>
+            <div className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent">Friendly.</div>
             <div>Authentic.</div>
           </h2>
         </div>

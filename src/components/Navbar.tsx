@@ -16,7 +16,7 @@ const Navbar = () => {
               <img src={logo} alt="ReChord Logo" className="w-10 h-10 rounded-lg transition-transform group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] rounded-lg opacity-0 group-hover:opacity-20 transition-opacity blur-sm"></div>
             </div>
-            <span className="text-xl font-bold bg-gradient-coral bg-clip-text text-transparent">ReChord</span>
+            <span className="text-xl font-bold" style={{ color: '#ebebd3' }}>ReChord</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">

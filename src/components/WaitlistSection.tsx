@@ -23,7 +23,7 @@ const WaitlistSection = () => {
         <div className="space-y-8 animate-slide-up">
           <h2 className="text-4xl md:text-6xl font-bold">
             Join the{" "}
-            <span className="bg-gradient-coral bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent drop-shadow-lg">
               Waiting List
             </span>
           </h2>
@@ -32,7 +32,7 @@ const WaitlistSection = () => {
 
           <p className="text-lg">
             If you'd like to be among the{" "}
-            <span className="text-[hsl(var(--gradient-purple-start))] font-semibold drop-shadow-sm">
+            <span className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent font-semibold drop-shadow-sm">
               first users
             </span>
             , please enter your details below.
@@ -54,7 +54,7 @@ const WaitlistSection = () => {
               aria-hidden="true"
             />
 
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4">
               <Input
                 type="email"
                 name="email" // PHP expects this key

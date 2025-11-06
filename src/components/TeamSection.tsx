@@ -9,35 +9,35 @@ const TeamSection = () => {
     {
       name: "Shayan Ebrahimi",
       role: "Tech Lead",
-      roleColor: "text-[hsl(var(--gradient-coral-start))]",
+      roleColor: "bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent",
       image: shayanImg,
       linkedin: "https://www.linkedin.com/in/shayan-ebrahimi/",
     },
     {
       name: "Oguzhan Dal",
       role: "Business Co-ordinator",
-      roleColor: "text-[hsl(var(--gradient-purple-start))]",
+      roleColor: "bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent",
       image: oguzhanImg,
       linkedin: "https://www.linkedin.com/in/ozzydal/",
     },
         {
       name: "Jim Bristow",
       role: "Chairman",
-      roleColor: "text-[hsl(var(--gradient-coral-start))]",
+      roleColor: "bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent",
       image: jimImg,
       linkedin: "#",
     },
     {
       name: "Aslan Nahich",
       role: "Dreamer",
-      roleColor: "text-[hsl(var(--gradient-coral-start))]",
+      roleColor: "bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent",
       image: aslanImg,
       linkedin: "https://www.linkedin.com/in/aslan-nahich-86a950137/",
     },
     {
       name: "Mahdi Tahvilian",
       role: "Marketing Lead",
-      roleColor: "text-[hsl(var(--gradient-purple-start))]",
+      roleColor: "bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent",
       image: mahdiImg,
       linkedin: "https://www.linkedin.com/in/mohammad-mahdi-tahvilian-56a08b215/",
     },
@@ -51,7 +51,7 @@ const TeamSection = () => {
           <p className="text-lg text-muted-foreground">The minds behind the voices</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {team.map((member, index) => (
             <a
               key={member.name}

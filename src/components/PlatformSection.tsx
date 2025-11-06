@@ -51,7 +51,7 @@ const PlatformSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/30 to-transparent"></div>
                 </div>
                 <div className="relative p-8 space-y-4 bg-card/95 backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold bg-gradient-coral bg-clip-text text-transparent">{feature.title}</h3>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent">{feature.title}</h3>
                   <p className="text-foreground/80 leading-relaxed">{feature.description}</p>
                 </div>
               </div>
