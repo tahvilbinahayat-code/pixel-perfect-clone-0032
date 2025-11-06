@@ -78,10 +78,10 @@ const WaitlistSection = () => {
 
           <div className="flex items-center justify-center gap-6 pt-8">
             <div className="flex flex-col items-center gap-3 p-6 bg-card/50 rounded-2xl border border-border/30 hover:scale-105 transition-transform">
-              <img src={iosLogo} alt="iOS" className="w-12 h-12" style={{ filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(476%) hue-rotate(8deg) brightness(96%) contrast(92%)' }} />
+              <img src={iosLogo} alt="iOS" className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(476%) hue-rotate(8deg) brightness(96%) contrast(92%)' }} />
             </div>
             <div className="flex flex-col items-center gap-3 p-6 bg-card/50 rounded-2xl border border-border/30 hover:scale-105 transition-transform">
-              <img src={androidLogo} alt="Android" className="w-12 h-12" style={{ filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(476%) hue-rotate(8deg) brightness(96%) contrast(92%)' }} />
+              <img src={androidLogo} alt="Android" className="w-10 h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(476%) hue-rotate(8deg) brightness(96%) contrast(92%)' }} />
               <span className="text-sm font-medium">Android</span>
             </div>
           </div>
