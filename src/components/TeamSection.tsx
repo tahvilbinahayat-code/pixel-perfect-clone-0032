@@ -3,8 +3,10 @@ import oguzhanImg from "@/assets/oguzhan.jpg";
 import jimImg from "@/assets/jim.jpg";
 import aslanImg from "@/assets/aslan.jpg";
 import mahdiImg from "@/assets/mahdi.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const TeamSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const team = [
     {
       name: "Shayan Ebrahimi",
@@ -44,9 +46,9 @@ const TeamSection = () => {
   ];
 
   return (
-    <section id="team" className="py-24 px-6">
+    <section id="team" className="py-24 px-6" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16 animate-slide-up">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h2 className="text-4xl md:text-6xl font-bold mb-4">Meet the Team</h2>
           <p className="text-lg text-muted-foreground">The minds behind the voices</p>
         </div>
@@ -58,8 +60,12 @@ const TeamSection = () => {
               href={member.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="group animate-slide-up block"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group block transition-all duration-700"
+              style={{ 
+                transitionDelay: isVisible ? `${index * 100}ms` : '0ms',
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)'
+              }}
             >
               <div className="relative bg-gradient-to-br from-card via-card to-card/80 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 border-2 border-border/50 hover:border-[hsl(var(--gradient-purple-start))] shadow-xl hover:shadow-2xl">
                 <div className="aspect-square overflow-hidden relative group">

@@ -1,8 +1,10 @@
 import voiceFirstImg from "@/assets/voice-first.jpg";
 import locationMapImg from "@/assets/location-map.jpg";
 import permanentPersonalImg from "@/assets/permanent-personal.jpg";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const PlatformSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const features = [
     {
       title: "Voice-First",
@@ -22,9 +24,9 @@ const PlatformSection = () => {
   ];
 
   return (
-    <section id="platform" className="py-24 px-6">
+    <section id="platform" className="py-24 px-6" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16 animate-slide-up">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <p className="text-sm uppercase tracking-widest text-[hsl(var(--section-label))] mb-4">
             THE PLATFORM
           </p>
@@ -38,8 +40,12 @@ const PlatformSection = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.title}
-              className="group animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`group transition-all duration-700`}
+              style={{ 
+                transitionDelay: isVisible ? `${index * 100}ms` : '0ms',
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)'
+              }}
             >
               <div className="relative bg-gradient-to-br from-card via-card to-card/80 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 border-2 border-border/50 hover:border-[hsl(var(--gradient-coral-start))] shadow-lg hover:shadow-2xl">
                 <div className="aspect-square overflow-hidden relative">

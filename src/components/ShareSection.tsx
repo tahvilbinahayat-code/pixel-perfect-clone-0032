@@ -1,8 +1,12 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const ShareSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6" ref={ref}>
       <div className="container mx-auto max-w-4xl">
-        <div className="bg-glass-bg/40 backdrop-blur-md rounded-3xl border border-border/30 p-12 md:p-16 text-center space-y-8 animate-slide-up">
+        <div className={`bg-glass-bg/40 backdrop-blur-md rounded-3xl border border-border/30 p-12 md:p-16 text-center space-y-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="w-16 h-1 bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] mx-auto rounded-full"></div>
           
           <h2 className="text-3xl md:text-5xl font-bold">

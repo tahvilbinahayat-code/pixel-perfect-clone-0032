@@ -4,8 +4,10 @@ import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import iosLogo from "@/assets/ios-logo.png";
 import androidLogo from "@/assets/android-logo.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const WaitlistSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -19,9 +21,9 @@ const WaitlistSection = () => {
   };
 
   return (
-    <section id="waitlist" className="py-24 px-6">
+    <section id="waitlist" className="py-24 px-6" ref={ref}>
       <div className="container mx-auto max-w-4xl text-center">
-        <div className="space-y-8 animate-slide-up">
+        <div className={`space-y-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h2 className="text-4xl md:text-6xl font-bold">
             Join the{" "}
             <span className="bg-gradient-to-r from-[hsl(var(--gradient-coral-start))] to-[hsl(var(--gradient-purple-start))] bg-clip-text text-transparent drop-shadow-lg">

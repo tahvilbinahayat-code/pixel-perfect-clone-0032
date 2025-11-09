@@ -1,6 +1,8 @@
 import { Mic, MapPin, Share2 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const HowItWorksSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const steps = [
     {
       icon: Mic,
@@ -24,9 +26,9 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16 animate-slide-up">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <p className="text-sm uppercase tracking-widest text-[hsl(var(--section-label))] mb-4">
             HOW IT WORKS
           </p>
@@ -41,8 +43,12 @@ const HowItWorksSection = () => {
           {steps.map((step, index) => (
             <div 
               key={step.title}
-              className="text-center space-y-6 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="text-center space-y-6 transition-all duration-700"
+              style={{ 
+                transitionDelay: isVisible ? `${index * 100}ms` : '0ms',
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)'
+              }}
             >
               <div className="inline-flex items-center justify-center">
                 <div className={`${step.bgColor} w-24 h-24 rounded-3xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300`}>
